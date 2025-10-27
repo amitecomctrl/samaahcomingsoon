@@ -1,188 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coming Soon</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-body {
-font-family: 'Poppins', sans-serif;
-background-color: #F5F5F0;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-padding: 30px 20px;
-}
-.container {
-text-align: center;
-max-width: 700px;
-width: 100%;
-}
-.logo {
-margin-bottom: 50px;
-}
-.logo img {
-max-width: 400px;
-height: auto;
-}
-.content {
-margin-bottom: 50px;
-}
-.content h1 {
-font-size: 2.8rem;
-font-weight: 600;
-color: #333;
-margin-bottom: 30px;
-letter-spacing: -0.5px;
-}
-.content p {
-font-size: 1.15rem;
-font-weight: 400;
-color: #555;
-line-height: 1.8;
-margin-bottom: 0;
-}
-/* Inline Link Styling with #E9AF53 */
-.content a {
-color: #E9AF53;
-text-decoration: none;
-font-weight: 500;
-border-bottom: 2px solid transparent;
-transition: all 0.3s ease;
-position: relative;
-display: inline-flex;
-align-items: center;
-gap: 5px;
-}
-.content a:hover {
-color: #D89A3D;
-border-bottom: 2px solid #E9AF53;
-}
-.content a svg {
-width: 18px;
-height: 18px;
-fill: currentColor;
-transition: all 0.3s ease;
-}
-.content a:hover svg {
-transform: translateY(-2px);
-}
-.footer {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 15px;
-margin-top: 40px;
-padding-top: 30px;
-border-top: 1px solid #E0DDD7;
-}
-.footer-text {
-font-size: 0.9rem;
-color: #888;
-font-weight: 300;
-}
-.linkedin-icon {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-width: 40px;
-height: 40px;
-background-color: #0077B5;
-border-radius: 50%;
-transition: all 0.3s ease;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.linkedin-icon:hover {
-background-color: #005582;
-transform: translateY(-3px);
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-.linkedin-icon svg {
-width: 20px;
-height: 20px;
-fill: white;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-.content h1 {
-font-size: 2.2rem;
-}
-.content p {
-font-size: 1.05rem;
-}
-.logo img {
-max-width: 250px;
-}
-}
-@media (max-width: 480px) {
-body {
-padding: 20px 15px;
-}
-.content h1 {
-font-size: 1.8rem;
-margin-bottom: 25px;
-}
-.content p {
-font-size: 0.95rem;
-line-height: 1.7;
-}
-.logo img {
-max-width: 200px;
-}
-.logo {
-margin-bottom: 40px;
-}
-.footer {
-flex-direction: column;
-gap: 10px;
-}
-.content a svg {
-width: 16px;
-height: 16px;
-}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5F5F0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .logo {
+            margin-bottom: 50px;
+        }
+
+        .logo img {
+            max-width: 220px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content {
+            margin-bottom: 40px;
+        }
+
+        .content h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .link-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .link-list a {
+            color: #E9AF53;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .link-list a:hover {
+            color: #D89A3D;
+            border-bottom: 2px solid #E9AF53;
+        }
+
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .link-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #E9AF53;
+            transition: all 0.3s ease;
+        }
+
+        .link-list a:hover svg {
+            fill: #D89A3D;
+        }
+
+        @media (max-width: 480px) {
+            .content h1 {
+                font-size: 1.9rem;
+            }
+            .link-list li {
+                margin-bottom: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-<!-- Logo Section -->
-<div class="logo">
-<img src="Screenshot 2025-09-22 161423.png" alt="Company Logo">
-</div>
-<!-- Content Section with Inline Links -->
-<div class="content">
-<h1>Under Wraps</h1>
-<p>
-While we add the finishing touches, browse our
-<a href="https://drive.google.com/file/d/1tH2Hm3p4NmWDhz6MR6mE7bNs_vDt_qqa/view?usp=sharing" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-<path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
-</svg>
-gifting catalogue
-</a> for ideas,
-<a href="mailto:nupur@pansari.co.in?subject=Let's%20Chat%20About%20Your%20Gifting%20Needs">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-</svg>
-drop us a line
-</a> to chat about your needs, or
-<a href="https://in.linkedin.com/in/aggnupur" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-<path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-</svg>
-connect on LinkedIn
-</a> for inspiration and updates — let's make gifting memorable together!
-</p>
-</div>
-</div>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="Screenshot 2025-09-22 161423.png" alt="Company Logo">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h1>Under Wraps</h1>
+            <p>While we add the finishing touches, you can:</p>
+
+            <ul class="link-list">
+                <li>
+                    <span class="link-icon">
+                        <!-- Catalog Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h9a1 1 0 0 1 .707.293l4 4A1 1 0 0 1 20 7v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM6 4v16h12V8h-4a2 2 0 0 1-2-2V4H6z"/></svg>
+                    </span>
+                    <a href="https://drive.google.com/file/d/1tH2Hm3p4NmWDhz6MR6mE7bNs_vDt_qqa/view?usp=sharing" target="_blank">
+                        Browse our gifting catalogue
+                    </a>
+                </li>
+                <li>
+                    <span class="link-icon">
+                        <!-- Mail Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v1l-10 6L2 7V6a2 2 0 0 1 2-2zm18 4.236V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.236l9.553 5.732a1 1 0 0 0 .894 0L22 8.236z"/></svg>
+                    </span>
+                    <a href="mailto:nupur@pansari.co.in?subject=Let's%20Chat%20About%20Your%20Gifting%20Needs">
+                        Drop us a line
+                    </a>
+                </li>
+                <li>
+                    <span class="link-icon">
+                        <!-- LinkedIn Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm8 0h4.667v2.17h.067c.653-1.237 2.25-2.54 4.63-2.54C22.09 7.63 24 10.074 24 14.285V24h-5v-8.66c0-2.07-.04-4.73-2.88-4.73-2.88 0-3.32 2.24-3.32 4.56V24H8V8z"/></svg>
+                    </span>
+                    <a href="https://in.linkedin.com/in/aggnupur" target="_blank">
+                        Connect on LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <span class="link-icon">
+                        <!-- WhatsApp Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.149-.67.15-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.373-.025-.522-.074-.149-.67-1.616-.916-2.218-.242-.579-.487-.501-.67-.51l-.57-.01c-.198 0-.52.074-.792.373-.273.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.08 4.487.709.306 1.262.489 1.693.625.712.227 1.36.195 1.872.118.571-.085 1.758-.718 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347zM12.005 2C6.477 2 2 6.484 2 12.021c0 2.123.557 4.17 1.616 5.978L2 22l4.133-1.59A9.942 9.942 0 0 0 12.005 22c5.527 0 10.005-4.484 10.005-10.021C22.01 6.484 17.532 2 12.005 2z"/></svg>
+                    </span>
+                    <a href="https://wa.me/919990852199" target="_blank">
+                        Chat with us on WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
-
-
